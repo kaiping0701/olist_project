@@ -1,0 +1,53 @@
+﻿table_name,column_name,business meaning,dtype,row_count,null_count,null_rate,n_unique,sample_values,unique_list
+customer,customer_city,顧客所在地(市),object,99441,0,0,4119,"['franca', 'sao bernardo do campo', 'sao paulo']",
+customer,customer_id,顧客下單快照(PK),object,99441,0,0,99441,"['06b8999e2fba1a1fbc88172c00ba8bc7', '18955e83d337fd6b2def6b18a428ac77', '4e7b3e00288586ebd08712fdd0374a03']",
+customer,customer_state,顧客所在地(州)用兩碼代碼表示,object,99441,0,0,27,"['SP', 'SP', 'SP']","['SP', 'SC', 'MG', 'PR', 'RJ', 'RS', 'PA', 'GO', 'ES', 'BA', 'MA', 'MS', 'CE', 'DF', 'RN', 'PE', 'MT', 'AM', 'AP', 'AL', 'RO', 'PB', 'TO', 'PI', 'AC', 'SE', 'RR']"
+customer,customer_unique_id, 平台推算的同一個真人，同一個人只能有一個代號,object,99441,0,0,96096,"['861eff4711a542e4b93843c6dd7febb0', '290c77bc529b7ac935b93aa66c333dc3', '060e732b5b29e8181a18229c7b0b2b5e']",
+customer,customer_zip_code_prefix,巴西郵遞區號前五碼，通常代表很細的地理區域，有14000個唯一值，如果顯示四碼代表資料開頭是0 (excel讀int64欄位把0取消),int64,99441,0,0,14994,"[14409, 9790, 1151]",
+geolocation,geolocation_city,巴西城市名稱有8000多唯一值,object,1000163,0,0,8011,"['sao paulo', 'sao paulo', 'sao paulo']",
+geolocation,geolocation_lat,郵遞區號所對應的緯度(度),float64,1000163,0,0,716685,"[-23.54562128, -23.54608113, -23.54612897]",
+geolocation,geolocation_lng,郵遞區號所對應的經度(度),float64,1000163,0,0,717097,"[-46.63929205, -46.6448203, -46.64295148]",
+geolocation,geolocation_state,郵遞曲號所屬州 (兩碼代碼),object,1000163,0,0,27,"['SP', 'SP', 'SP']","['SP', 'RN', 'AC', 'RJ', 'ES', 'MG', 'BA', 'SE', 'PE', 'AL', 'PB', 'CE', 'PI', 'MA', 'PA', 'AP', 'AM', 'RR', 'DF', 'GO', 'RO', 'TO', 'MT', 'MS', 'RS', 'PR', 'SC']"
+geolocation,geolocation_zip_code_prefix,巴西郵遞區號前五碼，有19000唯一值，如果顯示四碼代表資料開頭是0 (excel讀int64欄位把0取消),int64,1000163,0,0,19015,"[1037, 1046, 1046]",
+order_items,freight_value,訂單明細表中的freight_value運費，在同一筆訂單的情況下有多種不同的運費不同的商品，推測是同一筆訂單可以包含很多賣家，每個賣家分別計算運費,float64,112650,0,0,6999,"[13.29, 19.93, 17.87]",
+order_items,order_id,訂單明細表ID(PK),object,112650,0,0,98666,"['00010242fe8c5a6d1ba2dd792cb16214', '00018f77f2f0320c557190d7a144bdd3', '000229ec398224ef6ca0657da4fc703e']",
+order_items,order_item_id,同一筆訂單中的第幾筆商品，範圍有1~21,int64,112650,0,0,21,"[1, 1, 1]","[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21]"
+order_items,price,訂單明細表中該商品的成交價格(不包含運費、其他商品),float64,112650,0,0,5968,"[58.9, 239.9, 199.0]",
+order_items,product_id,對應商品id (FK關聯到商品表),object,112650,0,0,32951,"['4244733e06e7ecb4970a6e2683c13e61', 'e5f2d52b802189ee658865ca93d83a8f', 'c777355d18b72b67abbeef9df44fd0fd']",
+order_items,seller_id,對應賣家id (FK關聯到賣家表),object,112650,0,0,3095,"['48436dade18ac8b2bce089ec2a041202', 'dd7ddc04e1b6c2c614352b383efe2d36', '5b51032eddd242adc84c38acab88f23d']",
+order_items,shipping_limit_date,賣家最晚出貨期限(年月日時間),object,112650,0,0,54615,"['2017/9/19 9:45', '2017/5/3 11:05', '2018/1/18 14:48']",
+order_payment,order_id,同一筆訂單中的第幾次付款紀錄(有1~24)代表可以分期付款,object,103886,0,0,99440,"['b81ef226f3fe1789b1e8b2acac839d17', 'a9810da82917af2d9aefd1278f1dcfa0', '25e8ea4e93396b6fa0d3dd708e76c1bd']",
+order_payment,payment_installments,訂單分期期數(1~24),int64,103886,0,0,24,"[8, 1, 1]","[8, 1, 2, 3, 6, 5, 4, 10, 7, 12, 9, 13, 15, 24, 11, 18, 14, 20, 21, 17, 22, 0, 16, 23]"
+order_payment,payment_sequential,付款事件的順序(從1遞增到29),int64,103886,0,0,29,"[1, 1, 1]","[1, 2, 4, 5, 3, 8, 6, 7, 10, 11, 17, 19, 27, 12, 9, 15, 13, 14, 16, 25, 22, 26, 29, 28, 18, 21, 24, 23, 20]"
+order_payment,payment_type,"付款方式共有五種['credit_card', 'boleto', 'voucher', 'debit_card', 'not_defined']",object,103886,0,0,5,"['credit_card', 'credit_card', 'credit_card']","['credit_card', 'boleto', 'voucher', 'debit_card', 'not_defined']"
+order_payment,payment_value, 付款金額,float64,103886,0,0,29077,"[99.33, 24.39, 65.71]",
+order_review,order_id,訂單編號(FK關聯到訂單表)一筆訂單可以有很多評論,object,99224,0,0,98673,"['73fc7af87114b39712e6da79b0a377eb', 'a548910a1c6147796b98fdf73dbeba33', 'f9e4b658b201a9f2ecdecbb34bed034b']",
+order_review,review_answer_timestamp,評論回覆(年月日時間),object,99224,0,0,88867,"['2018/1/18 21:46', '2018/3/11 3:05', '2018/2/18 14:36']",
+order_review,review_comment_message,評論內容,object,99224,58265,0.587207,36135,"['Recebi bem antes do prazo estipulado.', 'Parabéns lojas lannister adorei comprar pela Internet seguro e prático Parabéns a todos feliz Páscoa', 'aparelho eficiente. no site a marca do aparelho esta impresso como 3desinfector e ao chegar esta com outro nome...atualizar com a marca correta uma vez que é o mesmo aparelho']",
+order_review,review_comment_title,評論標題,object,99224,87663,0.883486,4503,"['recomendo', 'Super recomendo', 'Não chegou meu produto ']",
+order_review,review_creation_date,評論建立時間(年月日時間),object,99224,0,0,636,"['2018/1/18 0:00', '2018/3/10 0:00', '2018/2/17 0:00']",
+order_review,review_id,評論ID(PK),object,99224,0,0,98410,"['7bc2406110b926393aa56f80a40eba40', '80e641a11e56f04c1ad469d5645fdfde', '228ce5500dc1d8e020d8d1322874b6f0']",
+order_review,review_score,評論分數1~5,int64,99224,0,0,5,"[4, 5, 5]","[4, 5, 1, 3, 2]"
+orders,customer_id,顧客ID(FK),object,99441,0,0,99441,"['9ef432eb6251297304e76186b10a928d', 'b0830fb4747a6c6d20dea0b8c802d7ef', '41ce2a54c0b03bf3443c3d931a367089']",
+orders,order_approved_at,訂單被核准時間(年月日時間),object,99441,160,0.001609,50462,"['2017/10/2 11:07', '2018/7/26 3:24', '2018/8/8 8:55']",
+orders,order_delivered_carrier_date,訂單交付給物流商的時間(年月日時間),object,99441,1783,0.01793,61544,"['2017/10/4 19:55', '2018/7/26 14:31', '2018/8/8 13:50']",
+orders,order_delivered_customer_date,訂單送達客戶地址時間(年月日時間),object,99441,2965,0.029817,75649,"['2017/10/10 21:25', '2018/8/7 15:27', '2018/8/17 18:06']",
+orders,order_estimated_delivery_date,訂單系統預估訂單送達時間(年月日時間),object,99441,0,0,459,"['2017/10/18 0:00', '2018/8/13 0:00', '2018/9/4 0:00']",
+orders,order_id,訂單ID(PK),object,99441,0,0,99441,"['e481f51cbdc54678b7cc49136f2d6af7', '53cdb2fc8bc7dce0b6741e2150273451', '47770eb9100c2d0c44946d9cf07ec65d']",
+orders,order_purchase_timestamp,客戶下單時間(年月日時間),object,99441,0,0,88789,"['2017/10/2 10:56', '2018/7/24 20:41', '2018/8/8 8:38']",
+orders,order_status,訂單狀態(可區分成立/不成立),object,99441,0,0,8,"['delivered', 'delivered', 'delivered']","['delivered', 'invoiced', 'shipped', 'processing', 'unavailable', 'canceled', 'created', 'approved']"
+product,product_category_name,商品分類名稱(73種),object,32951,610,0.018512,73,"['perfumaria', 'artes', 'esporte_lazer']",
+product,product_description_lenght,商品描述長度,float64,32951,610,0.018512,2960,"[287.0, 276.0, 250.0]",
+product,product_height_cm,商品高度(cm),float64,32951,2,6.10E-05,102,"[10.0, 18.0, 9.0]",
+product,product_id,商品ID,object,32951,0,0,32951,"['1e9e8ef04dbcff4541ed26657ea517e5', '3aa071139cb16b67ca9e5dea641aaa2f', '96bd76ec8810374ed1b65e291975717f']",
+product,product_length_cm,商品長度(cm),float64,32951,2,6.10E-05,99,"[16.0, 30.0, 18.0]",
+product,product_name_lenght,商品名稱長度(cm),float64,32951,610,0.018512,66,"[40.0, 44.0, 46.0]",
+product,product_photos_qty,商品照片數量1~20,float64,32951,610,0.018512,19,"[1.0, 1.0, 1.0]","[1.0, 4.0, 2.0, 3.0, 5.0, 9.0, 6.0, 7.0, 12.0, 10.0, 11.0, 17.0, 8.0, 15.0, 13.0, 14.0, 20.0, 18.0, 19.0]"
+product,product_weight_g,商品重量(g),float64,32951,2,6.10E-05,2204,"[225.0, 1000.0, 154.0]",
+product,product_width_cm,商品寬度(cm),float64,32951,2,6.10E-05,95,"[14.0, 20.0, 15.0]",
+sellers,seller_city,賣家所在地(市),object,3095,0,0,611,"['campinas', 'mogi guacu', 'rio de janeiro']",
+sellers,seller_id,賣家ID(PK),object,3095,0,0,3095,"['3442f8959a84dea7ee197c632cb2df15', 'd1b65fc7debc3361ea86b5f14c68d2e2', 'ce3ad9de960102d0677a81f5d0bb7b2d']",
+sellers,seller_state,賣家所在地(州)用兩碼代碼表示,object,3095,0,0,23,"['SP', 'SP', 'RJ']","['SP', 'RJ', 'PE', 'PR', 'GO', 'SC', 'BA', 'DF', 'RS', 'MG', 'RN', 'MT', 'CE', 'PB', 'AC', 'ES', 'RO', 'PI', 'MS', 'SE', 'MA', 'AM', 'PA']"
+sellers,seller_zip_code_prefix,賣家郵遞區號前五碼，通常代表很細的地理區域,int64,3095,0,0,2246,"[13023, 13844, 20031]",
+translation,product_category_name,翻譯表商品類別葡萄牙語(PK),object,71,0,0,71,"['beleza_saude', 'informatica_acessorios', 'automotivo']",
+translation,product_category_name_english,翻譯表商品類別英文翻譯,object,71,0,0,71,"['health_beauty', 'computers_accessories', 'auto']",

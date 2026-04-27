@@ -1,0 +1,33 @@
+# macOS 系統檔
+.DS_Store
+
+# Python 暫存檔
+__pycache__/
+*.pyc
+
+# Jupyter 暫存檔
+.ipynb_checkpoints/
+
+# 虛擬環境
+venv/
+.env/
+.venv/
+
+# 環境變數與機密資料
+.env
+*.key
+*.pem
+
+# 原始資料，不建議上傳
+data/raw/
+
+# 大型輸出檔，可視情況排除
+data/interim/
+data/processed/
+
+# 模型檔
+*.pkl
+*.joblib
+
+# Excel 暫存檔
+~$*.xlsx

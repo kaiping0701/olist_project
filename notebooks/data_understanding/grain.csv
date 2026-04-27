@@ -1,0 +1,8 @@
+﻿child_table,child_fk_cols,parent_table,parent_pk_cols,fk_null_cnt,fk_null_rate,missing_fk_cnt,missing_fk_rate,parent_row_cnt,child_fk_distinct_cnt,validate_pass
+orders,customer_id,customers,customer_id,0,0.0,0,0.0,99441,99441,True
+order_items,order_id,orders,order_id,0,0.0,0,0.0,99441,98666,True
+order_items,product_id,products,product_id,0,0.0,0,0.0,32951,32951,True
+order_items,seller_id,sellers,seller_id,0,0.0,0,0.0,3095,3095,True
+order_payments,order_id,orders,order_id,0,0.0,0,0.0,99441,99440,True
+order_reviews,order_id,orders,order_id,0,0.0,0,0.0,99441,98673,True
+products,product_category_name,translation,product_category_name,610,0.018512336499651,13,0.00040196654401533654,71,73,False
