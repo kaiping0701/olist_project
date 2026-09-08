@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="305c128c-44af-4da6-ba2a-e4edc621f0ab" name="更改" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../sql/01_stagging/01_cast/stg_category_translation.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../sql/01_stagging/01_cast/stg_customers.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../sql/01_stagging/01_cast/stg_order_items.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../sql/01_stagging/01_cast/stg_orders.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../sql/01_stagging/01_cast/stg_payments.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../sql/01_stagging/01_cast/stg_products.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../sql/01_stagging/01_cast/stg_reviews.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../sql/01_stagging/01_cast/stg_sellers.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../sql/01_stagging/02_data_quality/01_null_check/dq_null_check.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../sql/01_stagging/02_data_quality/02_PK_check/pk_check.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../sql/01_stagging/02_data_quality/03_FK_check/fk_check.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../sql/01_stagging/02_data_quality/04_customers/customer_attribute_consistency.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../sql/01_stagging/02_data_quality/05_reviews/check_review_dup.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../sql/01_stagging/02_data_quality/05_reviews/check_review_grain.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../sql/01_stagging/02_data_quality/06_payments/check_payment_value.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../sql/01_stagging/02_data_quality/06_payments/payment_type_distribution.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../sql/01_stagging/02_data_quality/07_category_translation/check_missing_category_translation.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../sql/01_stagging/02_data_quality/08_num_logic_check/delivered_logic_check.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../sql/01_stagging/02_data_quality/08_num_logic_check/prcie_freight_check.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../sql/01_stagging/02_data_quality/08_num_logic_check/review_score_check.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../sql/01_stagging/02_data_quality/09_order_event_definition/customer_order_order_gap_distribution.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../sql/01_stagging/02_data_quality/09_order_event_definition/map_order_to_event_check.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../sql/01_stagging/02_data_quality/09_order_event_definition/multi_order_event_summary.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../sql/01_stagging/02_data_quality/10_order_liftcycle_clean/01.order_status_check.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../sql/01_stagging/02_data_quality/10_order_liftcycle_clean/02.check_delivered_datetime_null.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../sql/01_stagging/02_data_quality/10_order_liftcycle_clean/03.check_delivered_order_datetime_logic.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../sql/01_stagging/02_data_quality/10_order_liftcycle_clean/04.check_delivered_lifecycle_median.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../sql/01_stagging/02_data_quality/10_order_liftcycle_clean/05.vw_orders_clean.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../sql/01_stagging/02_data_quality/10_order_liftcycle_clean/06.validate_delivered_order_lifecycle.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../sql/02_data_mart/01_brazil_holiday_lookup.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../sql/02_data_mart/02_dim_date.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../sql/02_data_mart/03_dim_customer.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../sql/02_data_mart/04_dim_customer_location.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../sql/02_data_mart/05_dim_product.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../sql/02_data_mart/06_dim_seller.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../sql/02_data_mart/07_create_table_ai_annotation.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../sql/02_data_mart/08_map_delivered_order_to_event.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../sql/02_data_mart/09_fact_delivered_order_item.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../sql/02_data_mart/10_vw_review_ai.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../sql/02_data_mart/11_vw_delivered_order_review_agg.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../sql/02_data_mart/12_vw_delivered_order_item_agg.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../sql/02_data_mart/13_vw_delivered_order_payment_agg.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../sql/02_data_mart/14_vw_delivered_order_base.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../sql/02_data_mart/15_fact_delivered_order_event.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../sql/02_data_mart/16_add_constraints.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../sql/02_data_mart/data_mart_detailed_ERD.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../sql/02_data_mart/data_mart_simplified_ERD.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../sql/99.validation/validate_data_mart.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Business_Understanding/Business_Understanding報告.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Business_Understanding/封存/v1/EDA框架.xmind" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Business_Understanding/封存/v1/商業成功指標.xmind" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Business_Understanding/封存/v1/核心業務目標拆解.xmind" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Business_Understanding/封存/v1/模型目標.xmind" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Business_Understanding/封存/v2/Business_Understanding_v2.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Business_Understanding/封存/v3/Business_understanding_v3.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Business_Understanding/專案流程圖.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Data_Preparation/v2.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Data_Preparation/封存/v1.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../~$column_inventory.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../動態探索/EDA/01_overall_analysis.ipynb.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../動態探索/EDA/02_retention_structure_analysis(bug修正).ipynb.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../動態探索/EDA/03_first_to_second_purchase_analysis.ipynb.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../動態探索/EDA拆解.xmind" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../動態探索/封存/EDA_old/02_retention_structure_analysis.ipynb.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../動態探索/封存/EDA_old/First-time and second-time purchase analysis.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../動態探索/封存/EDA_old/High_low_value_behavior_differences.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../動態探索/封存/EDA_old/customer_segmentation.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../動態探索/封存/EDA_old/customer_segmentation_v2.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../動態探索/封存/EDA_old/repurchase.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../動態探索/封存/EDA_old/retention.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../動態探索/封存/EDA_old/time_feasibility.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../靜態理解/PK_check.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../靜態理解/column_inventory.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../靜態理解/data_inverntory&amp;column_inventory.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../靜態理解/data_quality.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../靜態理解/fk_check.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../靜態理解/grain.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../靜態理解/quality_report.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../靜態理解/relationship_and_data_report.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../靜態理解/圖/ERD圖.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Deployment/reports/商業決策報告.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Deployment/reports/封存/7.olist電商數據分析期末報告.pptx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Deployment/reports/封存/7.olist電商數據分析期末書面報告v2.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Deployment/reports/封存/Kaggle巴西olist電商數據分析期末書面報告v1.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Deployment/reports/封存/報告ptt/7.Olist電商數據分析期中報告.pptx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Deployment/reports/封存/報告ptt/期中考簡報.pptx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Deployment/reports/封存/報告ptt/舊版封存/7.Olist電商數據分析期中報告v3.pptx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Deployment/reports/封存/報告ptt/舊版封存/7.Olist電商數據分析期中報告v4.pptx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Deployment/reports/封存/報告ptt/舊版封存/7.Olist電商數據分析期中報告v5.pptx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Deployment/reports/封存/報告ptt/舊版封存/7.巴西電商olist客戶價值數據分析v2.pptx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Deployment/reports/封存/報告ptt/舊版封存/Olist電商數據分析期中報告v1.pptx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Evaluation/Evaluation報告.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Modeling/modeling_2nd_purchase_v2.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Modeling/封存/modeling_2nd_purchase_v1.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Modeling/封存/repurchase_moder_test.ipynb" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/consoles/db/be418c5b-da47-4440-a568-48c67b007f4f/console.sql" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5,
+  &quot;fromUser&quot;: false
+}</component>
+  <component name="ProjectId" id="3FRQukFcLdTvv46FjcabtGXtzM3" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;database.data.extractors.current.export.id&quot;: &quot;Comma-separated (CSV)_id&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/kaiping/Desktop/olist_project/sql/02_data_mart&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.uml&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
+    ]
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/../../../sql/02_data_mart" />
+      <recent name="$PROJECT_DIR$/data_mart/99.validation" />
+      <recent name="$PROJECT_DIR$/data_mart" />
+      <recent name="$PROJECT_DIR$/../../../資料理解/sql/data_quality/payments" />
+      <recent name="$PROJECT_DIR$/stagging/data_quality/order_clean" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/stagging" />
+      <recent name="$PROJECT_DIR$/stagging/cast" />
+    </key>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="305c128c-44af-4da6-ba2a-e4edc621f0ab" name="更改" comment="" />
+      <created>1782035631120</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1782035631120</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

@@ -1,0 +1,8 @@
+﻿Table_name,col_PK,PK_null,row_count,PK_nunique,是否唯一？
+orders,order_id,0,99441,99441,是
+order_items,"['order_id', 'order_item_id']",0,112650,112650,是
+payments,"['order_id', 'payment_sequential']",0,103886,103886,是
+reviews,review_id,0,99224,98410,否，有814筆重複pk
+customers,customer_id,0,99441,99441,是
+products,product_id,0,32951,32951,是
+sellers,seller_id,0,3095,3095,是
