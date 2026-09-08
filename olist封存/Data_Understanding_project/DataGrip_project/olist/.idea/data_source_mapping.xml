@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourcePerFileMappings">
+    <file url="file://$PROJECT_DIR$/../../../sql/02_data_mart/03_dim_customer.sql" value="be418c5b-da47-4440-a568-48c67b007f4f" />
+    <file url="file://$PROJECT_DIR$/../../../sql/02_data_mart/14_vw_delivered_order_base.sql" value="be418c5b-da47-4440-a568-48c67b007f4f" />
+    <file url="file://$PROJECT_DIR$/../../../sql/02_data_mart/15_fact_delivered_order_event.sql" value="be418c5b-da47-4440-a568-48c67b007f4f" />
+    <file url="file://$PROJECT_DIR$/../../../sql/02_data_mart/16_add_constraints.sql" value="be418c5b-da47-4440-a568-48c67b007f4f" />
+    <file url="file://$PROJECT_DIR$/../../../sql/99.validation/validate_data_mart.sql" value="be418c5b-da47-4440-a568-48c67b007f4f" />
+  </component>
+</project>

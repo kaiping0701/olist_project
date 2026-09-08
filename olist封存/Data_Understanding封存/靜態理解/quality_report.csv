@@ -1,0 +1,17 @@
+﻿table,column,check_type,rule,issue_cnt,issue_rate,severity,decision,rationale
+orders,order_id,null_check,Critical field must not be NULL,0,0.0,none,keep,Missing value directly affects RFM/LTV
+orders,customer_id,null_check,Critical field must not be NULL,0,0.0,none,keep,Missing value directly affects RFM/LTV
+orders,order_purchase_timestamp,null_check,Critical field must not be NULL,0,0.0,none,keep,Missing value directly affects RFM/LTV
+orders,order_status,null_check,Critical field must not be NULL,0,0.0,none,keep,Missing value directly affects RFM/LTV
+order_items,order_id,null_check,Critical field must not be NULL,0,0.0,none,keep,Missing value directly affects RFM/LTV
+order_items,price,null_check,Critical field must not be NULL,0,0.0,none,keep,Missing value directly affects RFM/LTV
+order_items,price,negative_check,Price must not be negative,0,0.0,none,keep,No negative values found; no impact on LTV calculation
+order_items,price,zero_value_check,Price should not be zero unless justified,0,0.0,none,keep,No zero values found; no distortion in revenue metrics
+order_items,price,outlier_check,Extreme values evaluated using P99.9 threshold,0,0.0,none,keep,Long-tail distribution consistent with e-commerce pricing; no abnormal jump observed
+orders,order_approved_at,time_order_check,Approved time must be after purchase time,0,0.0,none,keep,Invalid time order affects process logic
+orders,order_delivered_customer_date,time_order_check,Delivered date must be after purchase date,0,0.0,none,keep,Invalid sequence distorts delivery delay
+orders,order_delivered_customer_date,time_order_check,Delivered customer date must be after carrier date,23,0.0002312929274645267,critical,investigate,Invalid logistics sequence distorts delivery process logic
+orders,order_estimated_delivery_date,time_order_check,Estimated delivery date should be after purchase date,0,0.0,none,keep,Unrealistic estimated date may affect delivery delay feature
+orders,order_delivered_customer_date,status_logic_check,Delivered orders must have delivered_customer_date,8,8.044971390070494e-05,critical,investigate,Missing delivered date corrupts delivery_delay and satisfaction features
+orders,order_delivered_customer_date,status_logic_check,Canceled orders should not have delivered_customer_date,6,6.033728542552871e-05,major,investigate,Inconsistent status may distort delivery performance metrics
+orders,order_status,distribution_check,Check order status distribution for abnormal concentration,0,0.0,none,keep,"Delivered orders account for 97.02%, canceled/unavailable 1.24%; distribution consistent with historical e-commerce dataset"
